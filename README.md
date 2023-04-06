@@ -1,2 +1,4 @@
 # TrailHive-landing-page
-made with HTML,CSS,JavaScript
+made with HTML, CSS, JavaScript
+
+

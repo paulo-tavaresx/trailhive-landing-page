@@ -10,7 +10,7 @@ function removeShowClass() {
 
 ;[...links].forEach((link) => {
   link.addEventListener('click', () => {
-    if (!menu.classList.contains('show')) {
+    if (menu.classList.contains('show')) {
       removeShowClass()
     }
   })

@@ -43,6 +43,7 @@
 
 .menu {
   display: none;
+  cursor: pointer;
 }
 main .content {
   display: flex;

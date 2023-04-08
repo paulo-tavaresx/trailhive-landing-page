@@ -9,6 +9,7 @@
   --primary-color: #232e26;
   --secondary-color: #d9efde;
   --hover-color: #5cfff5;
+  --hover-color-bg-secundary: #f0c362;
 }
 
 .button {
@@ -20,17 +21,7 @@
   text-decoration: none;
   transition: 0.5s ease-in-out;
 }
-.button.bg-secondary:hover {
-  color: var(--secondary-color);
-  background-color: var(--primary-color);
-  transition: 0.5s ease-in-out;
-}
-.button.bg-primary:hover {
-  color: var(--primary-color);
-  background-color: var(--secondary-color);
-  border: 1px solid var(--primary-color);
-  transition: 0.5s ease-in-out;
-}
+
 .bg-primary {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -229,10 +220,6 @@ footer .link {
   color: var(--secondary-color);
 }
 
-.link:hover {
-  color: var(--hover-color);
-}
-
 footer .subscribeForm {
   display: grid;
   grid-template-columns: 21.875rem 1fr;
@@ -271,14 +258,33 @@ footer .guidelines {
 .medias img {
   cursor: pointer;
 }
-.medias img:hover {
-  transform: scale(1.4);
-}
 
-footer .linkWithUnderline:hover {
-  color: var(--hover-color);
-}
+@media screen and (min-width: 769px) {
+  .button.bg-secondary:hover {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    transition: 0.5s ease-in-out;
+  }
+  .button.bg-primary:hover {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    transition: 0.5s ease-in-out;
+  }
+  .link-header:hover {
+    color: var(--hover-color-bg-secundary);
+  }
+  .medias img:hover {
+    transform: scale(1.4);
+  }
+  .link:hover {
+    color: var(--hover-color);
+  }
 
+  footer .linkWithUnderline:hover {
+    color: var(--hover-color);
+  }
+}
 @media screen and (max-width: 1240px) {
   .container {
     max-width: calc(100% - 5rem);

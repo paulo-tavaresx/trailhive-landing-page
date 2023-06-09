@@ -15,6 +15,7 @@
 .button {
   max-width: 10.625rem;
   font-size: 1rem;
+  border: 1px solid transparent;
   border-radius: 3.125rem;
   padding: 0.5rem 1.25rem;
   text-align: center;
@@ -269,7 +270,7 @@ footer .guidelines {
   .button.bg-primary:hover {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    border: 1px solid var(--primary-color);
+    border-color: var(--primary-color);
     transition: 0.5s ease-in-out;
   }
   .link-header:hover {
